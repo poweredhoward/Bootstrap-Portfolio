@@ -1,45 +1,104 @@
+<!--Questions after submission:
+portfolio text overlays bleeding over columns
+slight side scrolling for some reason
+-->
+
 <!doctype html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
   <title>About | Matthew</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Matthew</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+
+  <div class = "row">
+      <div class = "col-lg-8 bg-light mx-auto">
+      <!-- Section 1: Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- Our brand / logo -->
+        <a class="navbar-brand p-3" href="#" style="background-color: #4aaaa5; color: white">Matthew</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- Collapsible button -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+
+            <li class = "nav-item active">
+              <a class = "nav-link" href = "index.html">About<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+
+            <!-- The links of our navbar -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>      
+
+            
+          </ul>
+        </div>
       </nav>
     </div>
-  </header>
+  </div>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+  <div class = "container">
 
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+    <div class = "row">
+      <div class = "col-md-10 bg-light mx-auto">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+        <h1 style="color: #4aaaa5">About Me</h1>
+        <hr>
 
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
+        <img src = "assets/images/matthew.jpg" height = 400 width = 250 alt = "headshot" id = "headshot">
+        <p>
+          My name is Matthew Howard, and I am an aspiring Software Developer. I enjoy the process of starting with an idea and ending with a functional product. I just got into coding a couple years ago but didn't really develop an affinity for it until last year when I got my first internship. Since then I started to take coding more seriously, which is the main reason why I enrolled in this bootcamp.
+        </p>
 
-      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-    </section>
+        <p>
+          I started as a Biology student at Santa Monica College with aspirations to be a Physician's Assistant. While this is still a job I would love to do, but I was discouraged by the amount of schooling I would need to do and the crippling debt I would have as a result. I decided to give programming a try and found that I enjoyed it, so I took a couple of classes in Java. After receiving by Associate degree in computer programming I enrolled in the coding bootcamp at UCLA extension.
+        </p>
+
+
+        <p>
+          At the moment I don't have an exact plan or idea of where I want to work, but maybe something in the medical field would be interesting, especially given my initial interest in that field.
+        </p>
+      </div>
+    </div>
+
 
   </div>
 
-  <footer>
+  <footer class = "footer">
     <div class="container">
-      Copyright &copy; 
+      <span>Copyright &copy;</span> 
     </div>
   </footer>
+
+
+
+
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -4,60 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio | Matthew</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Matthew</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+
+  <div class = "row">
+    <div class = "col-lg-8 bg-light mx-auto">
+      <!-- Section 1: Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- Our brand / logo -->
+        <a class="navbar-brand p-3" href="#" style="background-color: #4aaaa5; color: white">Matthew</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- Collapsible button -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+
+            <li class = "nav-item">
+              <a class = "nav-link" href = "index.html">About</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+            </li>
+
+            <!-- The links of our navbar -->
+            <li class="nav-item ">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>      
+
+            
+          </ul>
+        </div>
       </nav>
     </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-        
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
   </div>
 
-  <footer>
+  <div class = "container">
+
+    <div class = "row">
+      <div class = "col-md-10 bg-light mx-auto">
+
+        <h1 style="color: #4aaaa5">Portfolio</h1>
+        <hr>
+
+        <div class="row">
+          <div class = "col-lg-6 p-2">
+            <img src = "assets/images/img1.jpg" alt = "3 siblings" class = "portfolio-image" style = "transform: rotate(180deg)">
+            <div class = "text-overlay" >
+              <p>3 Siblings</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 p-2" >
+          <img src = "assets/images/img2.jpg" alt = "Delicate Arch" class = "portfolio-image">
+          <div class = "text-overlay">
+            <p>Delicate Arch</p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row">
+
+        <div class="col-lg-6 p-2">
+          <img src = "assets/images/img3.jpg" alt = "Double Arch" class = "portfolio-image">
+          <div class = "text-overlay">
+            <p>Double Arch</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 p-2">
+          <img src = "assets/images/img4.jpg" alt = "South Window" class = "portfolio-image">
+          <div class = "text-overlay">
+            <p>South Window</p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row">
+
+        <div class="col-lg-6 p-2">
+          <img src = "assets/images/img5.jpg" alt = "Bryce Canyon" class = "portfolio-image">
+          <div class = "text-overlay">
+            <p>Bryce Canyon</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 p-2">
+          <img src = "assets/images/img6.jpg" alt = "Zion" class = "portfolio-image">
+          <div class = "text-overlay">
+            <p>Zion</p>
+          </div>
+        </div>
+      </div>
+
+
+     </div>
+
+
+   </div>
+  </div>
+
+  <footer class = "footer">
     <div class="container">
-      Copyright &copy; 
+      <span>Copyright &copy;</span> 
     </div>
   </footer>
+
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

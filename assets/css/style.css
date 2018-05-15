@@ -1,0 +1,58 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 50px; /* Margin bottom by footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Set the fixed height of the footer here */
+  line-height: 30px; /* Vertically center the text there */
+  background-color: #666666;
+  border-top: 5px solid #4aaaa5;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+#btnsubmit {
+	background-color: #4aaaa5;
+	border-radius: 0;
+	border: none;
+	color: white;
+}
+
+nav {
+	width: 100%;
+	padding: 20px;
+}
+
+#headshot {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.text-overlay p{
+	position: absolute;
+	bottom: 10px;
+	background-color: #4aaaa5;
+	width: 99%;
+	color: white;
+	z-index: 2;
+	text-align: center;
+	padding: none;
+	margin: 0px;
+}
+
+.portfolio-image {
+	height: 100%;
+	width: 100%;
+}

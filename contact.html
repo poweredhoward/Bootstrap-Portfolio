@@ -1,55 +1,113 @@
+<!-- Questions: 
+to ensure nav and body are in same coloumn, put in same div container, or separate divs with the same column formatting
+
+Also ask about github repo for pages, dedicated one or just use one for each individual repo?
+
+need a custom stylesheet too right?
+
+When to use bootstrap or my own custom? For example, btn class. BS gives it rounded corners, but I want square. Even worth using bootstrap for that button then?
+ -->
+
 <!doctype html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
   <title>Contact | Matthew</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Matthew</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+
+  <div class = "row">
+      <div class = "col-lg-8 bg-light mx-auto">
+      <!-- Section 1: Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- Our brand / logo -->
+        <a class="navbar-brand p-3" href="#" style="background-color: #4aaaa5; color: white">Matthew</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- Collapsible button -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+
+            <li class = "nav-item">
+              <a class = "nav-link" href = "index.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+
+            <!-- The links of our navbar -->
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+            </li>      
+
+            
+          </ul>
+        </div>
       </nav>
     </div>
-  </header>
+  </div>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+  <div class = "container">
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+    <div class = "row">
+      <div class = "col-md-10 bg-light mx-auto">
 
-    </section>
+        <h1 style="color: #4aaaa5">Contact</h1>
+        <hr>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for "namebox">Name</label>
+            <input type="text" class="form-control" id="namebox" placeholder="John Smith">
+          </div>
+
+          <div class="form-group">
+
+            <label for="emailbox">Email</label>
+            <input type="email" class="form-control" id="emailbox" placeholder="example@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="textareabox">Message</label>
+            <textarea class="form-control" id="textareabox" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="px-4 py-1" id = "btnsubmit">Submit</button> 
+        </form>
+      </div>
+    </div>
+
 
   </div>
 
-  <footer>
+  <footer class = "footer">
     <div class="container">
-      Copyright &copy; 
+      <span>Copyright &copy;</span> 
     </div>
   </footer>
+
+
+
+
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
